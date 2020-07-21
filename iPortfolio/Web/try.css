@@ -1,0 +1,307 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Oswald';
+    color: #505962;
+}
+.offset:before{
+    display: block;
+    content: "";
+    height: 3.7rem; 
+    /* height: 3.7rem; */
+    margin-top: -5.7rem;
+    margin-right: 0!important;
+}
+
+/* Nav */
+.navbar{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    background: rgba(0, 0, 0, 0.6)!important;
+}
+.navbar-nav li{
+    padding-right: .7rem;
+}
+.navbar .navbar-nav .nav-link{
+    color: white;
+    padding-top: .8rem;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:hover{
+    color: aqua!important;
+}
+
+ /* Landing Page */
+
+.home-inner{
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+ .caption{
+    width:100%;
+    max-width: 100%;
+    position: absolute;
+    top: 35%;
+    z-index: 1;
+    color: white;
+    text-transform: uppercase;
+}
+.caption h1{
+font-size: 3.8rem;
+font-weight: 700;
+letter-spacing: .3rem;
+text-shadow: .1rem .1rem .8rem black;
+padding-bottom: 1rem;
+}
+.caption h4{
+    font-size: 2rem;
+    text-shadow: .1rem .1rem .8rem black;
+    padding-bottom: 20px;
+}
+.btn-lg{
+    font-size: 25px;
+    font-weight: 600;
+    padding: .2rem .9rem;
+    border-width: medium;
+    border-radius: 0;
+    letter-spacing: 4px;
+    text-shadow:  1px 1px 3px black;
+}
+/* Event */
+/* carousel.css */
+.swiper-container{
+    margin-top: 50px;
+}
+.narrow{
+    width: 75%;
+    margin: 2rem auto;
+    
+    margin-bottom: 50px!important;
+    
+}
+.narrow h1{
+    font-size: 30px!important;
+}
+.btn-secondary{
+    border-color: rgb(199, 148, 195)!important;
+    border-width: medium!important;
+    border-radius: 0!important;
+    text-transform: uppercase!important;
+    font-size: 1rem!important;
+    color: black!important;
+    background-color: mistyrose!important; 
+    margin-bottom: 30px!important;
+    padding: .6rem 1rem!important;
+}
+.btn-secondary:hover{
+    font-weight: 800!important;
+    font-size: 1.2rem!important;
+    color: rgb(47, 0, 255)!important;
+    border-color:  rgb(47, 0, 255)!important;
+    background-color:whitesmoke!important;   
+}
+
+
+/* Info */
+#info .jumbotron{
+    padding-top: -20px;
+}
+
+#info .jumbotron .col-12{
+    padding-bottom: 100px;
+
+}
+
+
+.heading{
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+}
+.heading-underline{
+    width: 70px;
+    height: 3px;
+    background-color: rgb(221, 10, 221);
+    margin: 0 auto 32px;
+}
+
+
+
+.feature a{
+    color: rgb(20, 36, 255);
+    
+}
+.feature a:hover{
+    color: deeppink;
+}
+
+
+
+
+/* Resources */
+
+.fixed{
+    background-image: url(back.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    z-index: -1;
+    width: 100%!important;
+    height: 900px;
+}
+
+
+.dark{
+    background-color: rgba(0, 0, 0, 0.75);
+    color: mistyrose;
+    padding: 7rem 2rem;
+    width: 100%!important;
+    height: 870px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+.dark > .col-12{
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+
+.fixed-background h3{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+.fixed-background p{
+    margin-top: 1.5rem;
+}
+
+/* owners */
+
+.owners img{
+    width: 100%;
+    height: 220px;
+    border-radius: 50%;
+}
+blockquote .fa-quote-left{
+    color: rgb(215, 92, 240);
+    margin: 16px;
+}
+.owners-hr{
+    border-top: 2px solid rgb(215, 92, 240);
+}
+
+
+
+
+/* see more */
+
+.see{
+   margin-top: 60px;
+    height: 200px;
+}
+
+
+
+
+
+/*  Contact */
+
+#contact img{
+    margin: 20px 0;
+    width: 50px;
+    height: 50px;
+}
+#contact footer{
+    background-color: grey;
+    color: mistyrose;
+    padding: 32px 0 32px;
+    margin-top: 30px;
+    margin: 0 auto;
+}
+footer a{
+    color: mistyrose;
+}
+footer a:hover{
+    color: navy;
+}
+footer .fab{
+    font-size: 25px;
+    margin: 18px 8px 0 0;
+}
+
+.socket{
+    width: 100%;
+    border-top: .2rem solid rgb(233, 46, 223);
+    margin-top: 3rem;
+}
+
+
+/* Media */
+@media (max-width: 767px){
+    /* home page */
+    .caption h1{
+        font-size: 2.3rem;        
+        letter-spacing: .15rem;
+        padding-bottom: .5rem;
+    }
+    .caption h4{
+            font-size: 1.2rem;
+            padding-bottom: 18px;
+    }
+    .btn-lg{
+            font-size: 16px;
+            padding: .5rem 1rem;       
+    }
+
+
+    /* Event page */
+    .narrow{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .narrow h1{
+        font-size: 20px;
+    }
+
+    /* Resources */
+    .dark{
+        width: 100%!important;
+    }
+    .fixed{
+        background-position: bottom;
+        background-size: auto!important;
+    }
+
+
+    /* Client page */
+    .owners img{
+        width: 50%;
+        height: 220px;
+        border-radius: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+    .fixed{
+        background-image: url(back.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 700px 700px;
+        z-index: -1;
+        width: 100%;
+        height: 900px;
+    }
+
+
+    /* contacts */
+    #contact{
+        height: 100%;
+    }
+
+}
