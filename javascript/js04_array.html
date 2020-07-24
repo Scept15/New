@@ -17,7 +17,7 @@
 
 
         var scores = [100, 90, 75, 80];
-                //     0    1   2   3
+                //     0    1   2   3   <--  called index
 
         console.log(scores);
         console.log(scores[0]); // 100
@@ -29,7 +29,7 @@
 
         // prototype
         // array.prototype.pop(); -> Array.pop();
-        // pop() - take the last value nad remove.
+        // pop() - take the last value and remove.
         console.log("==== pop() =====");
         console.log(scores.pop()); // 80
         console.log(scores); // 100, 90, 75
@@ -41,17 +41,22 @@
         scores.push(50);
         scores.push(78);
         console.log(scores);
-        scores.push(100,90);
+        scores.push(80,99);
+        console.log(scores); // 100, 90, 50, 78, 80, 99
+
+        //splice(index, 1)
+        console.log(Array.isArray(scores)); // checking if scores is Array = TRUE
+        scores.splice(3, 1); // (index, remove)
         console.log(scores);
 
         // changing Value
         console.log("==== changing value() =====");
         console.log(scores); // 100, 90, 50, 78, 100, 90
-        console.log(scores.length); // 6
+        console.log(scores.length); // 5
         scores[0] = 60;
-        console.log(scores); // 60, 90, 50, 78, 100, 90
+        // console.log(scores); // 60, 90, 50, 78, 100, 90
         scores[2] = 88;
-        console.log(scores); // 60, 90, 88, 78, 100, 90
+        // console.log(scores); // 60, 90, 88, 78, 100, 90
         scores[8] = 95;
         console.log(scores); // 60, 90, 50, 78, 100, 90, , ,95
 
